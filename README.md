@@ -1,1 +1,1 @@
-Predicting survival on the Titanic using ML basics.
+Predicting survival on the Titanic using ML classification algorithms.
