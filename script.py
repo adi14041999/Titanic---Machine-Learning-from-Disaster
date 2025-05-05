@@ -127,6 +127,6 @@ print(cv.mean())
 
 voting_clf.fit(X_train_scaled,y_train) # train
 y_hat_base_vc = voting_clf.predict(X_test_scaled).astype(int) # test
-basic_submission = {'PassengerId': test.PassengerId, 'Survived': y_hat_base_vc}
-base_submission = pd.DataFrame(data=basic_submission)
-base_submission.to_csv('submission.csv', index=False)
+basic_prediction = {'PassengerId': test.PassengerId, 'Survived': y_hat_base_vc}
+base_prediction = pd.DataFrame(data=basic_prediction)
+base_prediction.to_csv('prediction.csv', index=False)
